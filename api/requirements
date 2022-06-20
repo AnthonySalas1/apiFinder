@@ -1,0 +1,12 @@
+asgiref==3.5.2
+autopep8==1.6.0
+decorators==2.0.7
+Django==4.0.5
+django-cors-headers==3.10.1
+djangorestframework==3.13.1
+Pillow==9.1.1
+pycodestyle==2.8.0
+pytz==2022.1
+sqlparse==0.4.2
+toml==0.10.2
+tzdata==2022.1
