@@ -1,0 +1,6 @@
+.venv
+venv
+myvenv
+.myvenv
+/myvenv
+./myvenv
