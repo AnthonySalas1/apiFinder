@@ -25,7 +25,7 @@ def user_list(request):
     if request.method == 'GET':
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
-        return JSONResponse(serializer.data)
+        return JSONResponse({'todos':serializer.data})
 
     elif request.method == 'POST':
         data = JSONParser().parse(request)
@@ -48,7 +48,7 @@ def user_detail(request, pk):
 
     if request.method == 'GET':
         serializer = UserSerializer(user)
-        return JSONResponse(serializer.data)
+        return JSONResponse({'todos': serializer.data})
 
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
